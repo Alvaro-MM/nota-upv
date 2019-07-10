@@ -22,6 +22,6 @@ Cualquier mejora será bienvenida, se anima a usar la plataforma GitHub de forma
 
 Esta aplicación ha sido desarrollada por:
 
-* **Mario Aragonés Lozano** - [LinkedIn](www.marioaragones.com)
+* **Mario Aragonés Lozano** - [LinkedIn](http://www.marioaragones.com)
 * **Francisco Mahedero Biot** 
 * **Ignacio Puche Lara** 
