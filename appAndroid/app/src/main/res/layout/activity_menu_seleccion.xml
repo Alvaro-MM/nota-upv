@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuSeleccion">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarMenuSeleccion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nombre_alumno"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="@string/menuSeleccion_nombre"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerAsignaturas"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerAsignaturas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/spinnerAsignaturas"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Spinner
+        android:id="@+id/spinnerAsignaturas"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@android:color/black"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPruebas"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerPruebas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/spinnerPruebas"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_alumno" />
+
+    <Spinner
+        android:id="@+id/spinnerPruebas"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@android:color/black"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/palabraNota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAsignaturas" />
+
+    <TextView
+        android:id="@+id/palabraNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/menuSeleccion_nota"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/menuSeleccion_palabraNotaMaxima"
+        app:layout_constraintEnd_toStartOf="@+id/campoNota"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerPruebas"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerPruebas" />
+
+    <TextView
+        android:id="@+id/campoNota"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/palabraNota"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerPruebas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="@+id/palabraNota" />
+
+    <TextView
+        android:id="@+id/menuSeleccion_palabraNotaMaxima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/menuSeleccion_notaMaxima"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/menuSeleccion_estadisticas"
+        app:layout_constraintStart_toStartOf="@+id/spinnerPruebas"
+        app:layout_constraintTop_toBottomOf="@+id/palabraNota"
+        app:layout_constraintVertical_bias="0.687" />
+
+    <EditText
+        android:id="@+id/menuSeleccion_textoNotaMaxima"
+        android:layout_width="128dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/menuSeleccion_palabraNotaMaxima"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerPruebas"
+        app:layout_constraintStart_toEndOf="@+id/menuSeleccion_palabraNotaMaxima"
+        app:layout_constraintTop_toTopOf="@+id/menuSeleccion_palabraNotaMaxima" />
+
+    <Button
+        android:id="@+id/menuSeleccion_estadisticas"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/stylo_bordes_acceder"
+        android:text="@string/menuSeleccion_estadisticas"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuSeleccion_palabraNotaMaxima" />
+
+    <TextView
+        android:id="@+id/noAsignaturas"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/menuSeleccion_noAsignaturas"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar"
+        android:layout_width="124dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/style_progressbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

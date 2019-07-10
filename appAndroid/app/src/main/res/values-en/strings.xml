@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NotaUPV</string>
+    <string name="aceptar">Accept</string>
+    <string name="dialogoAyudaNotas_ok">OK</string>
+    <string name="error">ERROR</string>
+    <string name="dialogoAyudaNotas_ayuda">Help</string>
+    <string name="idioma">Language</string>
+    <string name="menuEstadisticasNotas_ayuda">Help</string>
+    <string name="hint_usuario">DNI (Without any letter)</string>
+    <string name="hint_clave">UPV\'s PIN</string>
+    <string name="boton_acceder">LOG IN</string>
+    <string name="check_recordarme">Remember me</string>
+    <string name="cardNota_nombre">Name</string>
+    <string name="cardNota_pos">P (R)</string>
+    <string name="menuEstadisticasNotas_buscar">Search</string>
+    <string name="menuSeleccion_nombre">Hello</string>
+    <string name="sesionIntranet_errorDesconocido">Unknown error</string>
+    <string name="sesionIntranet_pinNum">PIN should be a numeric value.</string>
+    <string name="sobre_nosotros">About us</string>
+    <string name="adaptadorPaginaSecciones_pestana2">Marks</string>
+    <string name="cardNota_nota">Mark</string>
+    <string name="fragmentEstadisticas_aprobados">Pass:</string>
+    <string name="fragmentEstadisticas_media">Average:</string>
+    <string name="fragmentEstadisticas_total">Total:</string>
+    <string name="fragmentEstadisticas_notaMaxima">Higher mark:</string>
+    <string name="fragmentEstadisticas_notaMinima">Lowest mark:</string>
+    <string name="fragmentEstadisticas_suspendidos">Fail:</string>
+    <string name="fragmentEstadisticas_enBlanco">Blank:</string>
+    <string name="adaptadorPaginaSecciones_pestana1">Statistics</string>
+    <string name="menuSeleccion_estadisticas">STATISTICS</string>
+    <string name="menuSeleccion_noAsignaturas">There are no subjects</string>
+    <string name="menuSeleccion_nota">MARK:</string>
+    <string name="menuSeleccion_notaMaxima">Maxium mark:</string>
+    <string name="menuSeleccion_seleccioneAsig">Select a subject...</string>
+    <string name="menuSeleccion_seleccionePrueb">Select a test...</string>
+    <string name="sesionIntranet_claveIncorrecta_1">Wrong password. You tried it&#160;</string>
+    <string name="sesionIntranet_claveIncorrecta_2">&#160;times</string>
+    <string name="sesionIntranet_tiempoEsperaRespuesta">Connection error.</string>
+    <string name="title_activity_estadisticas_notas">Statistics</string>
+    <string name="dialogoAyudaNotas_mostrarAyuda">
+        \t<b>Name:</b> Student\&apos;s name.\n
+        \t<b>Mark:</b> Student\&apos;s mark.\n
+        \t<b>P:</b> Position of the student\&apos;s mark. 1 is the highest mark. \n
+        \t<b>R:</b> Times that mark is repeated.
+    </string>
+    <string name="sesionIntranet_cuentaBloqueada">Five unsuccessful login attempts have been made. The account is locked. To unblock it, contact the ASIC.</string>
+    <string name="sesionIntranet_datosNoValidos">Enter valid data.</string>
+    <string name="sesionIntranet_notasNoNumericas">This exam does not contain numerical marks.</string>
+    <string name="sesionIntranet_notasViejas">The marks are more than 30 days on the server. You can not obtain the statistics.</string>
+    <string name="sesionIntranet_personaNoAsociada">Wrong DNI. Person not associated as a student in the UPV.</string>
+    <string name="sobreNosotros_texto">
+        \t <h1>Welcome to NotaUPV.</h1>
+        \n \n
+        \t This application has been developed by Mario Aragonés Lozano, Francisco Mahedero Biot and Ignacio Puche Lara. We are Students from Bachelor\'s Degree in Telecommunication Technologies and Services Engineering and it is aimed to all students in Universitat Politécnica de Valencia who would like to know the statistics of an exam. The app is able to provide this information during 30 days from the publication of marks.
+        \n \n
+        \t This project is an app developed by-students-for-students, therefore, we have decided to make it open source. In this way, everyone is allowed to analyse the code. If any use of the code is made, it is requested to mention the GitHub page where the code was taken from
+        \n \n
+        \t Any suggestion and improvement will be welcome. We also would express our gratitude if the GitHub platform is used to share any improvement so anyone could consult it
+        \n \n
+        \t <b>IMPORTANT:</b> This app has been developed only by students. UPV has not taken part neither in the implementation nor in the publication of the project. Therefore <b>the app does not have official character</b>.
+        \n \n
+        \t We expect you to enjoy the app and to share it with the rest of students
+    </string>
+    <string name="escoge_idioma">Choose language:</string>
+    <string name="menuSeleccion_menuItem_cerrarSesion">Log out</string>
+    <string name="menuSeleccion_menuItem_refrescar">Refresh</string>
+    <string name="dialogoMenuSeleccion_mostrarAyuda">
+        \t Select the subject and the test whose mark is wanted to know. \n
+        \n
+        \t<b>MARK:</b> Mark obtained on the test. \n
+        \n
+        \t If the test\'s mark is numeric, it will be possible to obtain its statistics. \n
+        \n
+        \t<b>Maxium mark:</b> (Modify if necessary) The maxium mark that it is possible to get on the test. It will be used to calculate the statistics. \n
+        \t<b>STATISTICS:</b> Button used to show the test statistics.
+    </string>
+</resources>

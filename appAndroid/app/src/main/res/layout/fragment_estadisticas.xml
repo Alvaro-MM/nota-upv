@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AUTOR: Mario Aragones Lozano -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".estadisticas.FragEstadisticas">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtViewEstadisticasAsignatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Asignatura"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtViewEstadisticasPrueba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Prueba"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewEstadisticasAsignatura" />
+
+            <View
+                android:id="@+id/dividerEstadisticasPrimero"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="32dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewEstadisticasPrueba" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guiaVerticalEstadisticas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.50121653" />
+
+            <TextView
+                android:id="@+id/txtViewTextoAprobados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/fragmentEstadisticas_aprobados"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guiaVerticalEstadisticas"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dividerEstadisticasPrimero" />
+
+            <TextView
+                android:id="@+id/txtViewEstadisticasNumAprobados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="numAprobados"
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewTextoAprobados"
+                app:layout_constraintStart_toStartOf="@+id/txtViewEstadisticasNumSuspendidos"
+                app:layout_constraintTop_toTopOf="@+id/txtViewTextoAprobados"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/txtViewTextoSuspendidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/fragmentEstadisticas_suspendidos"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/txtViewTextoAprobados"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewTextoAprobados" />
+
+            <TextView
+                android:id="@+id/txtViewEstadisticasNumSuspendidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="numSuspendidos"
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewTextoSuspendidos"
+                app:layout_constraintStart_toStartOf="@+id/txtViewEstadisticasNumEnBlanco"
+                app:layout_constraintTop_toTopOf="@+id/txtViewTextoSuspendidos"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txtViewTextoEnBlanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/fragmentEstadisticas_enBlanco"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/txtViewTextoSuspendidos"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewTextoSuspendidos" />
+
+            <TextView
+                android:id="@+id/txtViewEstadisticasNumEnBlanco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="numEnBlanco"
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewTextoEnBlanco"
+                app:layout_constraintStart_toStartOf="@+id/txtViewEstadisticasNumTotal"
+                app:layout_constraintTop_toTopOf="@+id/txtViewTextoEnBlanco" />
+
+            <TextView
+                android:id="@+id/txtViewTextoTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/fragmentEstadisticas_total"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/txtViewTextoEnBlanco"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewTextoEnBlanco" />
+
+            <TextView
+                android:id="@+id/txtViewEstadisticasNumTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="numTotal"
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewTextoTotal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guiaVerticalEstadisticas"
+                app:layout_constraintTop_toTopOf="@+id/txtViewTextoTotal" />
+
+            <View
+                android:id="@+id/dividerEstadisticasSegundo"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="32dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewTextoTotal" />
+
+            <TextView
+                android:id="@+id/txtViewTextoMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/fragmentEstadisticas_media"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/txtViewTextoNotaMaxima"
+                app:layout_constraintTop_toBottomOf="@+id/dividerEstadisticasSegundo" />
+
+            <TextView
+                android:id="@+id/txtViewEstadisticasNotaMedia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="notaMedia"
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewTextoMedia"
+                app:layout_constraintStart_toStartOf="@+id/txtViewEstadisticasNotaMaxima"
+                app:layout_constraintTop_toTopOf="@+id/txtViewTextoMedia" />
+
+            <TextView
+                android:id="@+id/txtViewTextoNotaMaxima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/fragmentEstadisticas_notaMaxima"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/txtViewTextoNotaMinima"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewTextoMedia" />
+
+            <TextView
+                android:id="@+id/txtViewEstadisticasNotaMaxima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="notaMaxima"
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewTextoNotaMaxima"
+                app:layout_constraintStart_toStartOf="@+id/txtViewEstadisticasNotaMinima"
+                app:layout_constraintTop_toTopOf="@+id/txtViewTextoNotaMaxima" />
+
+            <TextView
+                android:id="@+id/txtViewTextoNotaMinima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/fragmentEstadisticas_notaMinima"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guiaVerticalEstadisticas"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewTextoNotaMaxima" />
+
+            <TextView
+                android:id="@+id/txtViewEstadisticasNotaMinima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="notaMinima"
+                app:layout_constraintBottom_toBottomOf="@+id/txtViewTextoNotaMinima"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guiaVerticalEstadisticas"
+                app:layout_constraintTop_toTopOf="@+id/txtViewTextoNotaMinima" />
+
+            <View
+                android:id="@+id/dividerEstadisticasFinal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="32dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintTop_toBottomOf="@+id/txtViewTextoNotaMinima" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

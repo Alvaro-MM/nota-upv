@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NotaUPV</string>
+    <string name="aceptar">Acceptar</string>
+    <string name="adaptadorPaginaSecciones_pestana1">Estadístiques</string>
+    <string name="adaptadorPaginaSecciones_pestana2">Notes</string>
+    <string name="cardNota_nombre">Nom</string>
+    <string name="boton_acceder">ACCEDIR</string>
+    <string name="cardNota_nota">Nota</string>
+    <string name="cardNota_pos">P (R)</string>
+    <string name="check_recordarme">Recorda\'m</string>
+    <string name="dialogoAyudaNotas_ayuda">Ajuda</string>
+    <string name="dialogoAyudaNotas_ok">OK</string>
+    <string name="error">ERROR</string>
+    <string name="fragmentEstadisticas_aprobados">Aprovats:</string>
+    <string name="fragmentEstadisticas_enBlanco">En blanc:</string>
+    <string name="fragmentEstadisticas_media">Mitjana:</string>
+    <string name="fragmentEstadisticas_notaMaxima">Nota Màxima:</string>
+    <string name="fragmentEstadisticas_notaMinima">Nota mínima:</string>
+    <string name="fragmentEstadisticas_suspendidos">Suspesos:</string>
+    <string name="fragmentEstadisticas_total">Total:</string>
+    <string name="hint_clave">PIN de la UPV</string>
+    <string name="hint_usuario">DNI (Sense lletra)</string>
+    <string name="idioma">Llengua</string>
+    <string name="menuEstadisticasNotas_ayuda">Ajuda</string>
+    <string name="menuEstadisticasNotas_buscar">Cerca</string>
+    <string name="menuSeleccion_noAsignaturas">No hi ha assignatures</string>
+    <string name="menuSeleccion_nombre">Hola</string>
+    <string name="menuSeleccion_notaMaxima">Nota màxima:</string>
+    <string name="sesionIntranet_errorDesconocido">Error desconegut</string>
+    <string name="sesionIntranet_pinNum">El PIN ha de ser un valor numèric.</string>
+    <string name="sobre_nosotros">Sobre nosaltres</string>
+    <string name="menuSeleccion_estadisticas">ESTADÍSTIQUES</string>
+    <string name="menuSeleccion_nota">NOTA:</string>
+    <string name="menuSeleccion_seleccioneAsig">Selecciona una assignatura...</string>
+    <string name="menuSeleccion_seleccionePrueb">Selecciona una prova...</string>
+    <string name="sesionIntranet_claveIncorrecta_1">Contrasenya incorrecta. Portes&#160;</string>
+    <string name="sesionIntranet_claveIncorrecta_2">&#160;intents</string>
+    <string name="sesionIntranet_tiempoEsperaRespuesta">Error de conexió.</string>
+    <string name="title_activity_estadisticas_notas">Estadístiques</string>
+    <string name="dialogoAyudaNotas_mostrarAyuda">
+        \t<b>Nom:</b> Nom de l\&apos;examinat. \n
+        \t<b>Nota:</b> Nota obtinguda. \n
+        \t<b>P:</b> Posició de la nota obtinguda. 1 és la nota més alta. \n
+        \t<b>R:</b> Nombre de vegades que es repeteix cada nota.
+    </string>
+    <string name="sesionIntranet_cuentaBloqueada">S\'han realitzat cinc intents d\'inici de sessió incorrectes. El compte està bloquejat. Per favor, contacteu amb el ASIC per desbloquejar-lo</string>
+    <string name="sesionIntranet_datosNoValidos">Introdueix dades vàlides.</string>
+    <string name="sesionIntranet_notasNoNumericas">Aquest examen té notes no numériques</string>
+    <string name="sesionIntranet_notasViejas">Les notes porten més de 30 dies al servidor. No es poden obtindre les estadístiques.</string>
+    <string name="sesionIntranet_personaNoAsociada">DNI incorrecte. Persona no associada com alumne en la UPV.</string>
+    <string name="sobreNosotros_texto">
+        \t <h1>Benvinguts a NotaUPV.</h1>
+        \n \n
+        \t Aquesta aplicació ha sigut creada per Mario Aragonés Lozano, Francisco Mahedero Biot i Ignacio Puche Lara. Nosaltres som alumnes del Grau en Enginyeria de Tecnologies i Serveis de les Telecomunicacions i ha sigut desenvolupada per a tots aquells alumnes de la Universitat Politècnica de Valencia que desitgen conèixer les estadístiques d’un examen fins un mes després de la publicació de les notes
+        \n \n
+        \t És una aplicació desenvolupada per alumnes per a alumnes, per tant, hem decidit fer públic el codi de l’aplicació per a que qualsevol persona el puga consultar. Si algú desitja fer ús del mateix solament es demana que es cite la pàgina de GitHub d’on s’ha obtés el mateix.
+        \n \n
+        \t Qualsevol sugerencia serà benvinguda. Agraïriem fer l’ús de la plataforma GitHub per a que tota millora arrive a tot aquell que desitge llegir el codi Font
+        \n \n
+        \t <b>IMPORTANT:</b> Aquesta aplicació ha sigut desenvolupada únicament per alumnes i la UPV no ha participat en cap moment en la creació ni la publicació de la mateixa, per tant, <b>no te cap tipus de caràcter oficial</b>.
+        \n \n
+        \t Esperem que vos agrade i que la compartiu amb els vostres companys.
+    </string>
+    <string name="escoge_idioma">Elegeix llengua:</string>
+    <string name="menuSeleccion_menuItem_cerrarSesion">Tanca la sessió</string>
+    <string name="menuSeleccion_menuItem_refrescar">Actualitza</string>
+    <string name="dialogoMenuSeleccion_mostrarAyuda">
+        \t Selecciona l\'assignatura i la prova de la que es vol conèixer la nota. \n
+        \n
+        \t<b>NOTA:</b> Nota obtinguda a l\'examen. \n
+        \n
+        \t Si l\'examen té una nota numérica, es podrán obtindre les estadístiques d\'aquesta. \n
+        \n
+        \t<b>Nota màxima:</b> (Modificar) Nota màxima que es pot obtindre a l\'examen. S\'utilitzarà per a obtindre les estadístiques. \n
+        \t<b>ESTADÍSTIQUES:</b> Botó per a obtindre les estadístiques de l\'examen.
+    </string>
+</resources>

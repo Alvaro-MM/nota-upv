@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- Autor: Mario Aragones Lozano -->
+    <string name="app_name">NotaUPV</string>
+
+    <!-- Strings para la clase Sesion Intranet -->
+    <string name="sesionIntranet_errorDesconocido">Error desconocido</string>
+    <string name="sesionIntranet_tiempoEsperaRespuesta">Error de conexión.</string>
+    <string name="sesionIntranet_datosNoValidos">Introduce datos válidos.</string>
+    <string name="sesionIntranet_pinNum">El PIN debe ser un valor numérico.</string>
+    <string name="sesionIntranet_personaNoAsociada">DNI incorrecto. Persona no asociada como alumno en la UPV.</string>
+    <string name="sesionIntranet_claveIncorrecta_1">Contraseña incorrecta. Llevas&#160; </string>
+    <string name="sesionIntranet_claveIncorrecta_2">&#160;intentos.</string>
+    <string name="sesionIntranet_cuentaBloqueada"> Se han relizado cinco intentos de inicio de sesión no correctos. La cuenta está bloqueada. Para desbloquearla contacte con el ASIC. </string>
+    <string name="sesionIntranet_notasViejas">Las notas llevan más de 30 días en el servidor. No se pueden obtener las estadísitcas.</string>
+    <string name="sesionIntranet_notasNoNumericas">Este examen no contiene notas numericas.</string>
+
+    <!-- Strings Inicio sesion(MainActivity) -->
+    <string name="aceptar">Aceptar</string>
+    <string name="error">ERROR</string>
+
+    <string name="hint_usuario">DNI (Sin letra)</string>
+    <string name="hint_clave">PIN de la UPV</string>
+
+    <string name="check_recordarme">Recordarme</string>
+
+    <string name="boton_acceder">ACCEDER</string>
+
+    <string name="idioma">Idioma</string>
+    <string name="sobre_nosotros">Sobre Nosotros</string>
+    <string name="github" translatable="false">Github</string>
+    <string name="escoge_idioma">Escoge idioma:</string>
+
+    <string-array name="idiomas_disponibles">
+        <item>English</item>
+        <item>Castellano</item>
+        <item>Valencià</item>
+    </string-array>
+
+    <string name="sobreNosotros_texto">
+        \t <h1>Bienvenido a NotaUPV.</h1>
+        \n \n
+        \t Esta aplicación ha sido desarrollada por Mario Aragonés Lozano, Francisco Mahedero Biot e Ignacio Puche Lara. Somos alumnos del Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación y ha sido desarrollada para todos aquellos alumnos de la Universitat Politècnica de València que deseen conocer las estadísticas de un examen hasta un mes después de la publicación de las notas.
+        \n \n
+        \t Es una aplicación desarrollada por alumnos para alumnos, por tanto, hemos decidido hacer público el código de la aplicación para que cualquier persona lo pueda consultar. Si alguien hace uso del código de la misma solo se pide que se cite la página de GitHub de donde se ha obtenido la información.
+        \n \n
+        \t Cualquier sugerencia y mejora será bienvenida. Agradeceríamos hacer uso de GitHub para cualquier mejora para que así todo aquel que desee consultarla pueda hacerlo.
+        \n \n
+        \t <b>IMPORTANTE:</b> Esta aplicación ha sido desarrollada únicamente por alumnos y la UPV no ha participado en ningún momento en la creación ni la publicación de la misma, por tanto, <b>carece de carácter oficial</b>.
+        \n \n
+        \t Esperemos que os guste y que la compartáis con el resto de compañeros.
+    </string>
+
+    <!-- Menu Seleccion  -->
+    <string name="menuSeleccion_nombre">Hola</string>
+    <string name="menuSeleccion_estadisticas">ESTADÍSTICAS</string>
+    <string name="menuSeleccion_nota">NOTA:</string>
+    <string name="menuSeleccion_notaMaxima">Nota máxima:</string>
+    <string name="menuSeleccion_noAsignaturas">No hay asignaturas</string>
+
+    <string name="menuSeleccion_seleccioneAsig">Seleccione una asignatura...</string>
+    <string name="menuSeleccion_seleccionePrueb">Seleccione una prueba...</string>
+
+    <string name="menuSeleccion_menuItem_refrescar">Refrescar</string>
+    <string name="menuSeleccion_menuItem_cerrarSesion">Cerrar sesión</string>
+
+    <string name="dialogoMenuSeleccion_mostrarAyuda">
+        \t Seleccionar la asignatura y la prueba de la que se quiere conocer la nota. \n
+        \n
+        \t<b>NOTA:</b> Nota obtenida en el examen. \n
+        \n
+        \t Si el examen tiene una nota numérica, se podrán obtener las estadísticas del mismo. \n
+        \n
+        \t<b>Nota máxima:</b> (Modificar) Nota máxima que se puede obtener en el examen. Será usada para realizar las estadísitcas. \n
+        \t<b>ESTADÍSTICAS:</b> Botón para obtener las estadísticas del examen.
+    </string>
+
+    <!-- Strings para la clase Adaptador Pagina Secciones -->
+    <string name="adaptadorPaginaSecciones_pestana1">Estadísticas</string>
+    <string name="adaptadorPaginaSecciones_pestana2">Notas</string>
+
+    <!-- Strings del fragmento de las estadisticas -->
+    <string name="fragmentEstadisticas_aprobados">Aprobados: </string>
+    <string name="fragmentEstadisticas_suspendidos">Suspendidos: </string>
+    <string name="fragmentEstadisticas_enBlanco">En Blanco: </string>
+    <string name="fragmentEstadisticas_total">Total: </string>
+    <string name="fragmentEstadisticas_media">Media: </string>
+    <string name="fragmentEstadisticas_notaMaxima">Nota Máxima: </string>
+    <string name="fragmentEstadisticas_notaMinima">Nota Mínima: </string>
+
+    <!-- Titulo seccion estadisticas -->
+    <string name="title_activity_estadisticas_notas">Estadísticas</string>
+
+    <!-- Card Notas -->
+    <string name="cardNota_nombre">Nombre</string>
+    <string name="cardNota_nota">Nota</string>
+    <string name="cardNota_pos">P (R)</string>
+
+    <!-- Menu Estadisticas Notas -->
+    <string name="menuEstadisticasNotas_buscar">Buscar</string>
+    <string name="menuEstadisticasNotas_ayuda">Ayuda</string>
+
+    <!-- Dialogo ayuda notas -->
+    <string name="dialogoAyudaNotas_ayuda">Ayuda</string>
+    <string name="dialogoAyudaNotas_ok">OK</string>
+    <string name="dialogoAyudaNotas_mostrarAyuda">
+        \t<b>Nombre:</b> Nombre del examinado. \n
+        \t<b>Nota:</b> Nota obtenida. \n
+        \t<b>P:</b> Posición de la nota obtenida. 1 es la nota más alta. \n
+        \t<b>R:</b> Número de veces que se repite dicha nota.
+    </string>
+
+</resources>
